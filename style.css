@@ -1,0 +1,1179 @@
+/* Reset margin and padding for all elements */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0; /* for all sides*/
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #0f0f19;
+    color: white;
+   
+      transition: opacity 0.5s ease-in-out;
+    
+    
+    
+}
+
+/* Styling for the header section */
+.header {
+    height: 770px;
+    background-image: linear-gradient(#000000,#22223f8c), url("IMAGES/factory.jpg"); /* Background gradient and image */
+    background-position: center; /* Center the background image */
+    background-size: cover;
+    position: relative; /* Positioning context for absolute children */
+    background-repeat: no-repeat;
+    
+}
+
+
+.navColorOne{
+    padding: 10px;
+    background-color:#0f0f19;
+}
+
+.navColorTwo{
+  padding: 1px;
+  background: linear-gradient(#0f0f19,#b7922c);
+}
+.contacts-top{
+    display: flex;
+    justify-content: right;
+}
+
+.contacts-top a{
+padding-left: 30px;
+}
+
+.email-logo
+{
+    width: 30px;
+    
+}
+
+
+/* Styling for the navigation bar */
+
+    
+
+/* Styling for the logo image */
+.logo {
+    width: 70px; /* Width of the logo image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -10px; /* Negative top margin for adjustment */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+.company-name{
+    font-size: 20px;
+    font-weight:700;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.container1{
+    width: 30%;
+    display: flex;
+    flex-grow: initial;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+    display:flex; /* Use flexbox for layout */
+    padding: 0.4% 6%; /* Padding for the navigation bar */
+    /* Horizontally center the contents */
+    align-items: center; /* Vertically center the contents */
+    justify-content: space-between; /* Space between the logo and nav links */
+    background-color: #b7922c;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+
+
+.realNav {
+    position: fixed; /* Make the navbar fixed when sticky */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left of the viewport */
+    width: 100%; /* Maintain full width */
+    z-index: 1000;
+   
+    /* You can add other styles here for the sticky navbar (e.g., background color change) */
+  }
+
+/*Styling for the list items within navigation links */
+.nav-links ul li {
+    list-style: none; /* Remove list bullet */
+    display: inline-block; /* Display as inline block */
+    margin-top: auto; /* Automatically adjust top margin */
+    padding: 1px 30px; /* Padding for each link */
+    position: relative; /* Positioning context for pseudo elements */
+}
+
+/* Styling for the anchor tags within list items */
+.nav-links ul li a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    font-weight: 700;
+    transition: color 0.5s;
+
+     /* Font weight */
+     /* Font family */
+}
+
+/* Styling for the pseudo element after each list item */
+.nav-links ul li::after {
+    content: ''; /* Empty content */
+    width: 0%; /* Full width */
+    height: 2px; /* Height of the underline */
+    background: #0f0f19; /* Background color of the underline */
+    display: block; /* Display as block element */
+    margin: auto; /* Auto margin for centering */
+    transition: 0.5s; /* Smooth transition */
+
+}
+
+/* Hover effect for the underline */
+.nav-links ul li:hover::after {
+    width: 100%; /* Full width on hover */
+    background-color:#0f0f19;
+}
+
+.nav-links ul li:hover a {
+    color: #0f0f19;
+}
+
+
+
+.hook{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:50vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.built-to-last{
+    margin-top: 400px;
+    font-size: 80px;
+}
+
+
+
+.backed-by-us{
+    font-size: 80px;
+}
+
+.offer{
+    margin-top: 50px;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.colored-word{
+    color: #d4a626;
+}
+
+.why-choose-us{
+    display: flex;
+    padding: 40px;
+    margin-top: 10px;
+    background-color: #b7922c;
+    font-size: 40px;
+    font-weight: 600;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 50px;
+}
+
+
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .reason {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .reason h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reason p {
+    line-height: 1.5;
+  }
+  
+  .reason img {
+    width: 8rem;
+  }
+  
+  .clients {
+    text-align: center;
+    padding-right: 100px;
+  }
+
+  .clients img{
+    width: 1500px;
+  }
+
+  footer {
+    width: 100%;  /* Fills the entire viewport width */
+    bottom: 0;
+    background: linear-gradient(#b7922c, #0f0f19);
+    padding: 10px 0 40px;  /* Reduced bottom padding for smaller screens */
+    border-top-left-radius: 50px;
+    font-size: 13px;
+    line-height: 20px;
+    border-top-right-radius: 50px;
+  }
+
+  .row{
+    width: 88vw;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    line-height: 30px;
+    justify-content: space-between;
+    
+  }
+
+  .col{
+    flex-basis: 25%;
+    padding: 10px;
+    
+  }
+
+  .col p{
+    font-weight: 500;
+  }
+
+  .col img{
+    width:60px;
+    margin-bottom: 0px;
+  }
+
+  .col .email-logo
+  {
+    width:30px;
+    
+  }
+  .col h3{
+    width: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: 900;
+  }
+
+
+  p.email-id{
+    padding-top: 30px;
+    width: fit-content;
+    border-bottom: 1px solid #b7922c;
+    font-weight: 800;
+  }
+.button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.button img{
+    width: 20px;
+  }
+
+  form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 50px;
+  }
+
+  form input{
+    width: 100%;
+    background: transparent;
+    color:#ffffff;
+    border: 0;
+    outline: none;
+    text-decoration-color: #AC363A;
+  }
+
+  input::placeholder {
+    color: white;
+  }
+
+  .social-icons
+  {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    color: white;
+    margin-right: 1;
+  }
+
+  h3{
+    padding-top: 20px;
+  }
+ 
+  i{
+    color: white;
+  }
+
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    margin: 20px auto;
+  }
+
+.copyright
+{
+  display: flex;
+  justify-content: center;
+}
+
+.underline{
+  width: 100%;
+  height: 5px;
+  background:#b7922c;
+
+  border-radius: 3px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+  0%{
+    left: -20px;
+  }
+  100%{
+    left:100%;
+  }
+}
+
+@media only screen and (max-width: 1440px) { /*LAPTOP L */
+  #contact-persons.col{
+    font-size: 10px;
+  }
+
+  hr{
+    padding-top: 80px;
+  }
+
+  .clients img{
+    width: 1200px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 1024px) { /*LAPTOP */
+  .col{
+    font-size: smaller;
+  }
+
+  #contact-persons.col{
+    font-size: 8px;
+  }
+
+  hr{
+    padding-top: 150px;
+  }
+
+  .clients img{
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 768px) { /*TABLET */
+  .col{
+    font-size: smaller;
+  }
+
+  #contact-persons.col{
+    font-size: 8px;
+  }
+
+  hr{
+    padding-top: 200px;
+  }
+
+  .clients img{
+    width: 750px;
+  }
+
+  .nav-links ul li a {
+    font-size: 10px;
+  }
+
+  .company-name{
+    font-size: 10px;
+  }
+
+  .logo{
+    width: 60px;
+  }
+
+  input::placeholder {
+    color: white;
+    font-size: 8px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 425px) {  /*MOBILE L */
+  .col{
+    font-size: 9px;
+  }
+
+  #contact-persons.col{
+    font-size: 8px;
+  }
+
+  hr{
+    padding-top: 200px;
+  }
+
+  .clients img{
+    width: 400px;
+  }
+
+  .nav-links ul li a {
+    font-size: 10px;
+  }
+
+ 
+
+  .company-name{
+    font-size: 0;
+  }
+
+  .logo{
+    width: 50px;
+    margin-top: 10px;
+  }
+ 
+  input::placeholder {
+    color: white;
+    font-size: 8px;
+  }
+
+  .reasons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+
+  .reason {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .reason h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reason p {
+    line-height: 1.5;
+  }
+  
+  .reason img {
+    width: 3rem;
+  }
+
+  .hook h1{
+    font-size: 50px;
+  }
+
+  .hook p{
+    font-size: 10px;
+  }
+  
+  .row{
+    line-height: 20px;
+  }
+  .copyright{
+    display: none;
+  }
+
+  .col p{
+    padding-top: 10px;
+  }
+
+  #email.col{
+    display: none;
+  }
+
+  #contact-underline.underline{
+    margin-top: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 425px) {  /*MOBILE L */
+  .col{
+    font-size: 9px;
+  }
+
+  #contact-persons.col{
+    display: none;
+  }
+
+  hr{
+    padding-top: 200px;
+  }
+
+  .clients img{
+    width: 350px;
+  }
+
+  .nav-links ul li a {
+    font-size: 10px;
+  }
+
+ 
+
+  .company-name{
+    font-size: 0;
+  }
+
+  .logo{
+    width: 50px;
+    margin-top: 10px;
+  }
+ 
+  input::placeholder {
+    color: white;
+    font-size: 8px;
+  }
+
+  .reasons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+
+  .reason {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .reason h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .why-choose-us{
+    font-size: large;
+  }
+  
+  .reason p {
+    line-height: 1.5;
+  }
+  
+  .reason img {
+    width: 3rem;
+  }
+
+  .hook h1{
+    font-size: 50px;
+  }
+
+  .hook p{
+    font-size: 10px;
+  }
+  
+  .row{
+    line-height: 20px;
+  }
+  .copyright{
+    display: none;
+  }
+
+  .col p{
+    padding-top: 10px;
+  }
+
+  #email.col{
+    display: none;
+  }
+
+  #contact-underline.underline{
+    margin-top: 15px;
+  }
+
+  .contacts-top{
+    font-size: 10px;
+   }
+
+}
+
+@media only screen and (max-width: 320px) {  /*MOBILE S */
+  .col{
+    font-size: 9px;
+  }
+
+  #contact-persons.col{
+    display: none;
+  }
+
+  hr{
+    padding-top: 200px;
+  }
+
+  .clients img{
+    width: 300px;
+  }
+
+  .nav-links ul li a {
+    font-size: 10px;
+  }
+
+ .contacts-top{
+  font-size: 10px;
+ }
+
+  .company-name{
+    font-size: 0;
+  }
+
+  .logo{
+    width: 50px;
+    margin-top: 10px;
+  }
+ 
+  input::placeholder {
+    color: white;
+    font-size: 8px;
+  }
+
+  .reasons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+
+  .reason {
+    padding: 0.3rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .reason h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .why-choose-us{
+    font-size: large;
+  }
+  
+  .reason p {
+    line-height: 1.5;
+  }
+  
+  .reason img {
+    width: 3rem;
+  }
+
+  .hook h1{
+    font-size: 50px;
+  }
+
+  .hook p{
+    font-size: 10px;
+  }
+  
+  .row{
+    line-height: 20px;
+  }
+  .copyright{
+    display: none;
+  }
+
+  .col p{
+    padding-top: 10px;
+  }
+
+  #email.col{
+    display: none;
+  }
+
+  #contact-underline.underline{
+    margin-top: 15px;
+  }
+
+}
+
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 3s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.reason:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.reason:nth-child(3){
+  transition-delay: 400ms;
+}
+
+.reason:nth-child(5){
+  transition-delay: 200ms;
+}
+.reason:nth-child(6){
+  transition-delay: 400ms;
+}
+
+
+
+
+.we-are-rcpd{
+  
+    display: flex;
+    padding: 40px;
+    margin-top: 10px;
+    background-color: #08080e;
+    font-size: 55px;
+    font-weight: 700;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.subtext
+{
+
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.about1-container img{
+  width: 50vw;
+  
+}
+
+
+
+.about1-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* One-to-two ratio for image and content areas */
+  gap: 20px; /* Gap between grid items */
+  justify-content: center; 
+}
+
+.vision-mission{
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  width: 30vw;
+  margin-left: 180px;
+  margin-top: 50px;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #b7922c;
+  
+}
+
+.vision-mission-subtext{
+  
+  font-size: 20px;
+  font-weight:normal;
+  padding-top: 20px;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: white;
+  
+}
+
+#mission{
+  margin-left: 1px;
+}
+
+.about2-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* One-to-two ratio for image and content areas */
+  gap: 20px; /* Gap between grid items */
+  justify-content: center; 
+}
+
+.about2 img{
+  width: 50vw;
+  margin-left: 30px;
+}
+
+.vision-and-mission{
+  padding-right: 140px;
+  grid-column-end: 2; /* End in the second column */
+}
+
+.rcpd{
+  color: #b7922c;
+}
+
+.grid-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+margin:400px;
+margin-top: 10px;
+}
+
+.grid-item{
+  background-color: #eee;
+  padding: 3vw;
+  padding: 11vh;
+  background-image: url(IMAGES/fabrication.png);
+  background-size: cover;
+  margin-top: 30px;
+  
+  
+}
+
+.item-bg {
+  text-align: center;
+  position: relative;
+  top: 130px;
+  width: 100%;  /* Ensure parent element has a defined width */
+  /* Try removing background-size for now */
+}
+
+.item-name {
+  color: #b7922c;
+  font-weight: 600;
+}
+
+#a{
+  margin-top: -20px;
+}
+
+.location{
+  height: 300px;
+  background-image: url("IMAGES/location1.png"); /* Background gradient and image */
+  background-position: center; /* Center the background image */
+  background-size: cover;
+  position: relative; /* Positioning context for absolute children */
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.contact {
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact p {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.contact img {
+  width: 8rem;
+}
+
+.machine-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.machine-list li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.category {
+  font-weight: bold; /* Make category headings bolder */
+  margin-bottom: 5px; /* Add space below category headings */
+}
+
+ 
+
+.grid-item:nth-child(1) {  /* Targets the second grid item */
+  background-image: url("IMAGES/1.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(2) {  /* Targets the second grid item */
+  background-image: url("IMAGES/2.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(3) {  /* Targets the second grid item */
+  background-image: url("IMAGES/3.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(4) {  /* Targets the second grid item */
+  background-image: url("IMAGES/4.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(5) {  /* Targets the second grid item */
+  background-image: url("IMAGES/5.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(6) {  /* Targets the second grid item */
+  background-image: url("IMAGES/6.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(7) {  /* Targets the second grid item */
+  background-image: url("IMAGES/7.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(8) {  /* Targets the second grid item */
+  background-image: url("IMAGES/8.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(9) {  /* Targets the second grid item */
+  background-image: url("IMAGES/9.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(10) {  /* Targets the second grid item */
+  background-image: url("IMAGES/10.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(11) {  /* Targets the second grid item */
+  background-image: url("IMAGES/eleben.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(12) {  /* Targets the second grid item */
+  background-image: url("IMAGES/12.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(13) {  /* Targets the second grid item */
+  background-image: url("IMAGES/13.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(14) {  /* Targets the second grid item */
+  background-image: url("IMAGES/14.jpg")  /* Replace with your image path */
+}
+
+.grid-item:nth-child(15) { /* Targets the 15th grid item */
+  background-image: url("IMAGES/15.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(16) { /* Targets the 16th grid item */
+  background-image: url("IMAGES/16.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(17) { /* Targets the 17th grid item */
+  background-image: url("IMAGES/17.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(18) { /* Targets the 18th grid item */
+  background-image: url("IMAGES/18.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(19) { /* Targets the 19th grid item */
+  background-image: url("IMAGES/19.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(20) { /* Targets the 20th grid item */
+  background-image: url("IMAGES/20.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(21) { /* Targets the 21st grid item */
+  background-image: url("IMAGES/21.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(22) { /* Targets the 22nd grid item */
+  background-image: url("IMAGES/22.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(23) { /* Targets the 23rd grid item */
+  background-image: url("IMAGES/23.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(24) { /* Targets the 24th grid item */
+  background-image: url("IMAGES/24.jpg"); /* Replace with your image path */
+}
+
+.grid-item:nth-child(25) { /* Targets the 25th grid item */
+  background-image: url("IMAGES/25.jpg"); /* Replace with your image path */
+}
+
+.rcpd-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin:400px;
+  margin-top: 10px;
+  }
+  
+  .rcpd-item{
+    background-color: #eee;
+    padding: 3vw;
+    padding: 11vh;
+    background-image: url(IMAGES/fabrication.png);
+    background-size: cover;
+
+    
+  }
+  
+  .rcpd-bg {
+    text-align: center;
+    position: relative;
+    top: 130px;
+    width: 100%;  /* Ensure parent element has a defined width */
+    /* Try removing background-size for now */
+  }
+
+  .rcpd-item:nth-child(1) { /* Targets the 25th grid item */
+    background-image: url("IMAGES/1.jpg"); /* Replace with your image path */
+  }
+
+  #popup-form {
+    font-family: "Raleway";
+    visibility: hidden; /* Initially hide the popup */
+    position: fixed; /* Keep it positioned on scroll */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) scale(0.9); /* Initial scale for transition */
+    padding: 20px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a border */
+    z-index: 1001; /* Ensure it's on top of other elements */
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 50vh;
+    box-sizing: border-box;
+    opacity: 0; /* Initial opacity for transition */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s; /* Transition effects */
+    width: 20vw;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #b7922c;
+  }
+  
+  #popup-form.show {
+    visibility: visible; /* Show the popup */
+    opacity: 1; /* Final opacity */
+    transform: translate(-50%, -50%) scale(1); /* Final scale */
+  }
+  
+  
+  #popup-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  #popup-form input,
+  #popup-form textarea,
+  #popup-form button {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    box-sizing: border-box;
+  }
+  
+  #popup-form button {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+  }
+ 
+  #popup-form textarea {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: transparent; /* Remove grey background */
+    user-select: none; /* Prevent text selection and dragging */
+    resize: none; /* Prevent resizing */
+    color: white;
+    
+  }
+
+  
